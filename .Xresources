@@ -1,0 +1,18 @@
+Xcursor.size: 12
+
+XTerm*faceName: Source Code Pro
+XTerm*faceSize: 16
+
+xterm*background: #1e1e1e
+xterm*foreground: #ffffff
+
+xterm*savelines: 16384
+xterm*ScrollBar: false
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
