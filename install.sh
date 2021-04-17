@@ -26,6 +26,13 @@ sudo make install
 make clean
 cd ..
 
+cd slock
+make clean
+make
+sudo make install
+make clean
+cd ..
+
 cp .Xresources $HOME/
 xrdb -merge $HOME/.Xresources
 
