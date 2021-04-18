@@ -33,14 +33,19 @@ sudo make install
 make clean
 cd ..
 
-cp .Xresources $HOME/
-xrdb -merge $HOME/.Xresources
-
 cd pywal
 pip3 install --user .
 cd ..
 
 wal -i wallpaper.jpg --saturate 0.85
 
+cp .Xresources .Xresources.wal
+cat $HOME/.cache/wal/colors.Xresources >> .Xresources.wal
+
+cp .Xresources.wal $HOME/
+xrdb -merge $HOME/.Xresources
+
 cp .bashrc $HOME/
 cp .xinitrc $HOME/
+
+
