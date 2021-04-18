@@ -18,8 +18,8 @@ static int topbar             = 1;        /* 0 means bottom bar */
 static char *fonts[]          = { "monospace:size=10", "JoyPixels:pixelsize=10:antialias=true:autohint=true"  };
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#222222";
-static char selfgcolor[]            = "#222222";
+static char normfgcolor[]           = "#1e1e1e";
+static char selfgcolor[]            = "#1e1e1e";
 static char selbordercolor[]        = "#82007e";
 static char selbgcolor[]            = "#9e007c";
 static char *colors[][3] = {
@@ -106,14 +106,14 @@ static const char *termcmd[]  = { TERMINAL, NULL };
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "color1",		STRING,	&normbordercolor },
-		{ "color8",		STRING,	&selbordercolor },
+		{ "color8",		STRING,	&normbordercolor },
+		{ "color1",		STRING,	&selbordercolor },
 
-		{ "color6",		STRING,	&normbgcolor },
-		{ "color0",		STRING,	&normfgcolor },
+		// { "color5",		STRING,	&normbgcolor },
+		{ "color2",		STRING,	&normfgcolor },
 
-		{ "color0",		STRING,	&selfgcolor },
-		{ "color5",		STRING,	&selbgcolor },
+		// { "color3",		STRING,	&selfgcolor },
+		{ "color2",		STRING,	&selbgcolor },
 
 		{ "borderpx",		INTEGER, &borderpx },
 		{ "snap",		INTEGER, &snap },
@@ -187,7 +187,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run") },
+	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#8e0b70' -nf '#8e0b70' ") },
 	// { MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("passmenu") },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
