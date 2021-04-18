@@ -27,15 +27,15 @@ cd pywal
 pip3 install --user .
 cd ..
 
-wal -i wallpaper.jpg --saturate 0.85
+wal -i wallpaper --saturate 0.85
 
 cp .Xresources .Xresources.wal
 cat $HOME/.cache/wal/colors.Xresources >> .Xresources.wal
 
-cp .Xresources.wal $HOME/
+cp .Xresources.wal $HOME/.Xresources
 xrdb -merge $HOME/.Xresources
 
 cp .bashrc $HOME/
 cp .xinitrc $HOME/
 
-cp wallpaper.jpg $HOME/wallpaper
+cp wallpaper $HOME/wallpaper
