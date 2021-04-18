@@ -1,36 +1,26 @@
 cd dwm
-make clean
 make
 sudo make install
-make clean
 cd ..
 
 cd dwmblocks
-make clean
 make
 sudo make install
-make clean
 cd ..
 
 cd st
-make clean
 make
 sudo make install
-make clean
 cd ..
 
 cd dmenu
-make clean
 make
 sudo make install
-make clean
 cd ..
 
 cd slock
-make clean
 make
 sudo make install
-make clean
 cd ..
 
 cd pywal
@@ -48,4 +38,4 @@ xrdb -merge $HOME/.Xresources
 cp .bashrc $HOME/
 cp .xinitrc $HOME/
 
-
+cp wallpaper.jpg $HOME/wallpaper
