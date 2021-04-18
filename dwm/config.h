@@ -18,8 +18,8 @@ static int topbar             = 1;        /* 0 means bottom bar */
 static char *fonts[]          = { "monospace:size=10", "JoyPixels:pixelsize=10:antialias=true:autohint=true"  };
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
+static char normfgcolor[]           = "#222222";
+static char selfgcolor[]            = "#222222";
 static char selbordercolor[]        = "#82007e";
 static char selbgcolor[]            = "#9e007c";
 static char *colors[][3] = {
@@ -106,12 +106,15 @@ static const char *termcmd[]  = { TERMINAL, NULL };
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
-		{ "color0",		STRING,	&normbordercolor },
-		{ "color5",		STRING,	&selbordercolor },
-		{ "color0",		STRING,	&normbgcolor },
-		{ "color2",		STRING,	&normfgcolor },
+		{ "color1",		STRING,	&normbordercolor },
+		{ "color8",		STRING,	&selbordercolor },
+
+		{ "color6",		STRING,	&normbgcolor },
+		{ "color0",		STRING,	&normfgcolor },
+
 		{ "color0",		STRING,	&selfgcolor },
-		{ "color2",		STRING,	&selbgcolor },
+		{ "color5",		STRING,	&selbgcolor },
+
 		{ "borderpx",		INTEGER, &borderpx },
 		{ "snap",		INTEGER, &snap },
 		{ "showbar",		INTEGER, &showbar },
