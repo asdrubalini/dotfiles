@@ -28,6 +28,8 @@ static char *colors[][3] = {
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
 
+static char main_xresource_color[] = "color4";
+
 typedef struct {
 	const char *name;
 	const void *cmd;
@@ -102,18 +104,19 @@ static const Layout layouts[] = {
 /* commands */
 static const char *termcmd[]  = { TERMINAL, NULL };
 
+
 /*
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
 		{ "color8",		STRING,	&normbordercolor },
-		{ "color1",		STRING,	&selbordercolor },
+		{ main_xresource_color,		STRING,	&selbordercolor },
 
-		// { "color5",		STRING,	&normbgcolor },
-		{ "color2",		STRING,	&normfgcolor },
+		{ "color0",		STRING,	&normbgcolor },
+		{ main_xresource_color,		STRING,	&normfgcolor },
 
-		// { "color3",		STRING,	&selfgcolor },
-		{ "color2",		STRING,	&selbgcolor },
+		{ "color0",		STRING,	&selfgcolor },
+		{ main_xresource_color,		STRING,	&selbgcolor },
 
 		{ "borderpx",		INTEGER, &borderpx },
 		{ "snap",		INTEGER, &snap },
@@ -187,7 +190,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#8e0b70' -nf '#8e0b70' ") },
+	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#bd93f9' -nf '#bd93f9' ") },
 	// { MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("passmenu") },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
