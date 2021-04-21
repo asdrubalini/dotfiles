@@ -24,6 +24,9 @@ alias yay="paru"
 alias scroto="scrot"
 alias multimc="prime-run multimc"
 
+# Gentoo
+alias eworld="doas emerge -ND @world"
+
 export LANG=en_US.utf8
 export EDITOR=vim
 
