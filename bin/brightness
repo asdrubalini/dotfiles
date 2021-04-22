@@ -1,0 +1,5 @@
+#!/usr/bin/env /bin/sh
+
+cat /sys/class/backlight/amdgpu_bl*/brightness
+echo $1 | sudo tee /sys/class/backlight/amdgpu_bl*/brightness
+xrandr --output eDP --brightness .8

@@ -28,7 +28,7 @@ static char *colors[][3] = {
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
 
-static char main_xresource_color[] = "color4";
+static char main_xresource_color[] = "color5";
 
 typedef struct {
 	const char *name;
@@ -190,7 +190,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#83adad' -nf '#83adad' ") },
+	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#d485ad' -nf '#d485ad' ") },
 	// { MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("passmenu") },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
