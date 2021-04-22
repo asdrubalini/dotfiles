@@ -26,10 +26,15 @@ alias multimc="prime-run multimc"
 alias rgit="git --git-dir=/home/giovanni/Config --work-tree=/"
 
 # Gentoo
-alias eworld="doas emerge -ND @world"
+alias eworld="doas emerge --ask --changed-use --deep @world"
+
+# Snapper
+alias backup-new="doas snapper -c config create --description"
+alias backup-list="doas snapper -c config list"
 
 export LANG=en_US.utf8
 export EDITOR=vim
+export BROWSER=firefox
 
 export PATH=$HOME/Scripts/:$PATH
 export PATH=$HOME/.local/bin/:$PATH
