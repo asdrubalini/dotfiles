@@ -30,3 +30,7 @@ cp .bashrc $HOME/
 cp .xinitrc $HOME/
 
 cp wallpaper $HOME/wallpaper
+
+cp bin/* $HOME/.local/bin
+chmod +x $HOME/.local/bin/*
+
