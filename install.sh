@@ -1,26 +1,26 @@
 cd dwm
 make
-sudo make install
+doas make install
 cd ..
 
 cd dwmblocks
 make
-sudo make install
+doas make install
 cd ..
 
 cd st
 make
-sudo make install
+doas make install
 cd ..
 
 cd dmenu
 make
-sudo make install
+doas make install
 cd ..
 
 cd slock
 make
-sudo make install
+doas make install
 cd ..
 
 cp .Xresources $HOME/.Xresources
