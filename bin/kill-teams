@@ -1,0 +1,3 @@
+#!/usr/bin/env /bin/sh
+
+kill -15 $(pidof teams)
