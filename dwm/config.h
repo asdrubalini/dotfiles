@@ -28,7 +28,7 @@ static char *colors[][3] = {
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
 
-static char main_xresource_color[] = "color5";
+static char main_xresource_color[] = "color11";
 
 typedef struct {
 	const char *name;
@@ -190,7 +190,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#b16286' -nf '#b16286' ") },
+	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#fabd2f' -nf '#fabd2f' ") },
 	// { MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("passmenu") },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
@@ -210,7 +210,7 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_x,		incrgaps,	{.i = -3 } },
 	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_c,		spawn,		SHCMD("brave") },
+	{ MODKEY,			XK_c,		spawn,		SHCMD("$BROWSER") },
 	/* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("") }, */
 	/* V is automatically bound above in STACKKEYS */
 	{ MODKEY,			XK_b,		togglebar,	{0} },
