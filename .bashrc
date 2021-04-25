@@ -30,7 +30,7 @@ alias eworld="doas emerge --ask --changed-use --deep @world"
 
 export LANG=en_US.utf8
 export EDITOR=vim
-export BROWSER=google-chrome-unstable
+export BROWSER=google-chrome-stable
 
 export PATH=$HOME/Scripts/:$PATH
 export PATH=$HOME/.local/bin/:$PATH
