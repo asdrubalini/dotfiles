@@ -7,12 +7,12 @@
 /* appearance */
 static unsigned int borderpx  = 1;        /* border pixel of windows */
 static unsigned int snap      = 0;       /* snap pixel */
-static unsigned int gappih    = 5;       /* horiz inner gap between windows */
-static unsigned int gappiv    = 5;       /* vert inner gap between windows */
-static unsigned int gappoh    = 5;       /* horiz outer gap between windows and screen edge */
-static unsigned int gappov    = 5;       /* vert outer gap between windows and screen edge */
+static unsigned int gappih    = 8;       /* horiz inner gap between windows */
+static unsigned int gappiv    = 8;       /* vert inner gap between windows */
+static unsigned int gappoh    = 8;       /* horiz outer gap between windows and screen edge */
+static unsigned int gappov    = 8;       /* vert outer gap between windows and screen edge */
 static int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
-static int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
+static int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
 static char *fonts[]          = { "Fira Mono:size=10", "JoyPixels:pixelsize=10:antialias=true:autohint=true"  };
