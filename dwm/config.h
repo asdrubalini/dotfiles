@@ -190,7 +190,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#8ec07c' -nf '#8ec07c' ") },
+	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#d3869b' -nf '#d3869b' ") },
 	// { MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("passmenu") },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
