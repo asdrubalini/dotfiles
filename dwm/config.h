@@ -28,7 +28,7 @@ static char *colors[][3] = {
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
 
-static char main_xresource_color[] = "color14";
+static char main_xresource_color[] = "color13";
 
 typedef struct {
 	const char *name;
