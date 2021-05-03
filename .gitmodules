@@ -1,6 +1,4 @@
 [submodule "st"]
 	path = st
-	url = git@github.com:unizLike/st.git
-[submodule "pywal"]
-	path = pywal
-	url = https://github.com/dylanaraps/pywal
+	url = git@github.com:asdrubalini/st.git
+
