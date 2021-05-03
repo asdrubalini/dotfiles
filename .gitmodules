@@ -7,3 +7,6 @@
 [submodule "dmenu"]
 	path = dmenu
 	url = git@github.com:asdrubalini/dmenu.git
+[submodule "st"]
+	path = st
+	url = git@github.com:asdrubalini/st.git
