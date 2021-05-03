@@ -7,3 +7,6 @@
 [submodule "dwmblocks"]
 	path = dwmblocks
 	url = git@github.com:asdrubalini/dwmblocks.git
+[submodule "dmenu"]
+	path = dmenu
+	url = git@github.com:asdrubalini/dmenu.git
