@@ -2,3 +2,6 @@
 	path = st
 	url = git@github.com:asdrubalini/st.git
 
+[submodule "dwm"]
+	path = dwm
+	url = git@github.com:asdrubalini/dwm.git
