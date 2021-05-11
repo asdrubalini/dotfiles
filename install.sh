@@ -34,3 +34,5 @@ cp wallpaper $HOME/.wallpaper
 cp bin/* $HOME/.local/bin
 chmod +x $HOME/.local/bin/*
 
+mkdir -p $HOME/.config/alacritty/
+cp alacritty.yml $HOME/.config/alacritty/
