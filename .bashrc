@@ -8,7 +8,6 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-cd $HOME
 alias phploc="find . -name '*.php' | xargs wc -l"
 alias jsloc="find . -name '*.js' | xargs wc -l"
 alias scssloc="find . -name '*.scss' | xargs wc -l"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+percentage=`free | grep Mem | awk '{print $3/$2 * 100.0}'`
+percentage=`printf "%.2f" $percentage`
+echo $percentage
+
