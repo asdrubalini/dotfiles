@@ -37,5 +37,3 @@ chmod +x $HOME/.local/bin/*
 mkdir -p $HOME/.config/alacritty/
 cp alacritty.yml $HOME/.config/alacritty/
 
-mkdir -p $HOME/.fish/
-cp config.fish $HOME/.fish/config.fish
