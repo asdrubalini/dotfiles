@@ -8,11 +8,6 @@ make
 doas make install
 cd ..
 
-cd st
-make
-doas make install
-cd ..
-
 cd dmenu
 make
 doas make install
