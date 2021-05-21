@@ -35,3 +35,6 @@ export PATH=$HOME/Scripts/:$PATH
 export PATH=$HOME/.local/bin/:$PATH
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+/usr/bin/fish
+
