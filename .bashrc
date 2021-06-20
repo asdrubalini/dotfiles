@@ -22,7 +22,7 @@ alias gitp="git push"
 alias yay="paru"
 alias scroto="scrot"
 alias multimc="prime-run multimc"
-alias rgit="git --git-dir=/home/giovanni/Config --work-tree=/"
+alias rgit="git --git-dir=/home/giovanni/config --work-tree=/"
 
 # Gentoo
 alias eworld="doas emerge --ask --changed-use --deep @world"

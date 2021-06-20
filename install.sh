@@ -36,3 +36,5 @@ mkdir -p $HOME/.config/nvim/
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/Vundle.vim
 cp -r nvim/* $HOME/.config/nvim/
 
+mkdir -p $HOME/.config/qtile/
+cp -r qtile/* $HOME/.config/qtile/
