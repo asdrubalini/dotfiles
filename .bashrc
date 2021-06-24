@@ -6,7 +6,6 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
 
 alias phploc="find . -name '*.php' | xargs wc -l"
 alias jsloc="find . -name '*.js' | xargs wc -l"
@@ -36,3 +35,4 @@ export PATH=$HOME/.local/bin/:$PATH
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+fish
