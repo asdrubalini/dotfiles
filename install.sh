@@ -30,7 +30,10 @@ cp bin/* $HOME/.local/bin
 chmod +x $HOME/.local/bin/*
 
 mkdir -p $HOME/.config/alacritty/
-cp alacritty.yml $HOME/.config/alacritty/
+cp alacritty/* $HOME/.config/alacritty/
+
+mkdir -p $HOME/.config/picom/
+cp picom/* $HOME/.config/picom/
 
 mkdir -p $HOME/.config/nvim/
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/Vundle.vim
