@@ -16,3 +16,4 @@ mkdir -p $HOME/.config/nvim/
 [ ! -d $HOME/.config/nvim/bundle/Vundle.vim ] && git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/Vundle.vim
 cp -r nvim/* $HOME/.config/nvim/
 
+cp bin/* $HOME/.local/bin
