@@ -35,6 +35,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'sheerun/vim-polyglot'
 
+Plugin 'tbastos/vim-lua'
+
 
 " End of plugins
 call vundle#end()
