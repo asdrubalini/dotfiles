@@ -31,6 +31,10 @@ Plugin 'tpope/vim-commentary'
 " Start of plugins
 Plugin 'morhetz/gruvbox'
 
+Plugin 'tpope/vim-fugitive'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+Plugin 'sheerun/vim-polyglot'
+
 
 " End of plugins
 call vundle#end()
