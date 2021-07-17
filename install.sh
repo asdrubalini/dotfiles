@@ -3,6 +3,7 @@ xrdb -merge $HOME/.Xresources
 
 cp .bashrc $HOME/
 cp .xinitrc $HOME/
+cp .bash_profile $HOME/
 
 cp wallpaper $HOME/.wallpaper
 
