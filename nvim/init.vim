@@ -1,3 +1,4 @@
+" General settings
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
 set shiftwidth=4    " number of spaces to use for autoindent
@@ -37,13 +38,15 @@ Plugin 'sheerun/vim-polyglot'
 
 Plugin 'tbastos/vim-lua'
 
-
 " End of plugins
 call vundle#end()
 filetype plugin indent on
 
+" Color scheme
 colorscheme gruvbox
 let g:airline_theme='gruvbox'
+set background=dark
+set termguicolors
 
 function! s:check_back_space() abort
     let col = col('.') - 1
