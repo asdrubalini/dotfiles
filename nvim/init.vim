@@ -16,6 +16,15 @@ inoremap <c-v> <c-r>+
 cnoremap <c-v> <c-r>+
 inoremap <c-r> <c-v>
 
+" NERDTree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | wincmd p | endif
+
 " Neovide font
 set guifont=Code\ New\ Roman:h24
 
@@ -27,7 +36,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/nerdtree'
 " Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 
@@ -39,6 +47,7 @@ Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'sheerun/vim-polyglot'
 
 Plugin 'tbastos/vim-lua'
+Plugin 'preservim/nerdtree'
 
 " End of plugins
 call vundle#end()
