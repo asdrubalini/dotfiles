@@ -13,6 +13,8 @@ cp alacritty/* $HOME/.config/alacritty/
 mkdir -p $HOME/.config/picom/
 cp picom/* $HOME/.config/picom/
 
+cp starship/starship.toml $HOME/.config/
+
 mkdir -p $HOME/.config/nvim/
 [ ! -d $HOME/.config/nvim/bundle/Vundle.vim ] && git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/Vundle.vim
 cp -r nvim/* $HOME/.config/nvim/
