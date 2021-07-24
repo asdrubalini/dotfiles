@@ -7,7 +7,6 @@ bash .screenlayout/external.sh
 # bash .screenlayout/single.sh
 
 export _JAVA_AWT_WM_NONREPARENTING=1
-picom &
 
 exec dwm
 
