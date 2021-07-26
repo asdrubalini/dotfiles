@@ -36,22 +36,26 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 
 " Start of plugins
 Plugin 'morhetz/gruvbox'
 
 Plugin 'tpope/vim-fugitive'
-Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'sheerun/vim-polyglot'
 
 Plugin 'tbastos/vim-lua'
 Plugin 'preservim/nerdtree'
 
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+Plugin 'junegunn/fzf'
+Plugin 'rust-lang/rust.vim', { 'for': 'rust' }
+
 " End of plugins
 call vundle#end()
 filetype plugin indent on
+
+let g:deoplete#enable_at_startup = 1
 
 " Color scheme
 colorscheme gruvbox
