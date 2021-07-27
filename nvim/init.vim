@@ -50,6 +50,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf'
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
+Plug 'jiangmiao/auto-pairs'
+Plug 'machakann/vim-sandwich'
+
 " End of plugins
 call plug#end()
 
