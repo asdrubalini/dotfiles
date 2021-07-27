@@ -30,29 +30,29 @@ set guifont=Code\ New\ Roman:h24
 
 set nocompatible               " be improved, required
 filetype off                   " required
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-commentary'
+
+call plug#begin()
+Plug 'VundleVim/Vundle.vim'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-commentary'
 
 " Start of plugins
-Plugin 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 
-Plugin 'tpope/vim-fugitive'
-Plugin 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
+Plug 'sheerun/vim-polyglot'
 
-Plugin 'tbastos/vim-lua'
-Plugin 'preservim/nerdtree'
+Plug 'tbastos/vim-lua'
+Plug 'preservim/nerdtree'
 
-Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-Plugin 'junegunn/fzf'
-Plugin 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 " End of plugins
-call vundle#end()
+call plug#end()
+
 filetype plugin indent on
 
 let g:deoplete#enable_at_startup = 1
