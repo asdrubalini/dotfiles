@@ -16,15 +16,6 @@ inoremap <c-v> <c-r>+
 cnoremap <c-v> <c-r>+
 inoremap <c-r> <c-v>
 
-" NERDTree
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-" Start NERDTree when Vim is started without file arguments.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | wincmd p | endif
-
 " Neovide font
 set guifont=Code\ New\ Roman:h24
 
@@ -37,7 +28,6 @@ Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
 
-" Start of plugins
 Plug 'morhetz/gruvbox'
 
 Plug 'tpope/vim-fugitive'
@@ -46,19 +36,40 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tbastos/vim-lua'
 Plug 'preservim/nerdtree'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+Plug 'autozimu/LanguageClient-neovim', {
+\ 'branch': 'next',
+\ 'do': 'bash install.sh',
+\ }
+let g:LanguageClient_serverCommands = {
+\ 'rust': ['rust-analyzer'],
+\ }
+
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
+Plug 'frazrepo/vim-rainbow'
 
 " End of plugins
 call plug#end()
 
+" NERDTree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | wincmd p | endif
+
 filetype plugin indent on
 
 let g:deoplete#enable_at_startup = 1
+let g:rustfmt_autosave = 1
+let g:rainbow_active = 1
 
 " Color scheme
 colorscheme gruvbox
@@ -70,13 +81,4 @@ function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-" Use tab for trigger completion with characters ahead and navigate.
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
