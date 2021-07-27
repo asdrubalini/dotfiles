@@ -37,17 +37,8 @@ Plug 'tbastos/vim-lua'
 Plug 'preservim/nerdtree'
 
 Plug 'junegunn/fzf'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
-Plug 'autozimu/LanguageClient-neovim', {
-\ 'branch': 'next',
-\ 'do': 'bash install.sh',
-\ }
-let g:LanguageClient_serverCommands = {
-\ 'rust': ['rust-analyzer'],
-\ }
-
-" Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
