@@ -46,10 +46,16 @@ Plugin 'sheerun/vim-polyglot'
 
 Plugin 'tbastos/vim-lua'
 Plugin 'preservim/nerdtree'
-
-Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'junegunn/fzf'
-Plugin 'rust-lang/rust.vim', { 'for': 'rust' }
+
+" Rust
+Plugin 'neovim/nvim-lspconfig'
+Plugin 'simrat39/rust-tools.nvim'
+
+" Optional dependencies
+Plugin 'nvim-lua/popup.nvim'
+Plugin 'nvim-lua/plenary.nvim'
+Plugin 'nvim-telescope/telescope.nvim'
 
 " End of plugins
 call vundle#end()
