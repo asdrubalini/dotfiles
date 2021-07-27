@@ -47,7 +47,7 @@ let g:LanguageClient_serverCommands = {
 \ 'rust': ['rust-analyzer'],
 \ }
 
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+" Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
