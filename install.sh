@@ -16,7 +16,8 @@ cp picom/* $HOME/.config/picom/
 cp starship/starship.toml $HOME/.config/
 
 mkdir -p $HOME/.config/nvim/
-[ ! -d $HOME/.config/nvim/bundle/Vundle.vim ] && git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/Vundle.vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 cp -r nvim/* $HOME/.config/nvim/
 
 cp bin/* $HOME/.local/bin
