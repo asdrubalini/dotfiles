@@ -14,7 +14,7 @@ mkdir -p $HOME/.config/picom/
 cp picom/* $HOME/.config/picom/
 
 mkdir -p $HOME/.config/fish/
-rp fish/* $HOME/.config/fish/
+cp fish/* $HOME/.config/fish/
 
 cp .tmux.conf $HOME/
 
