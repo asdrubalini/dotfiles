@@ -22,7 +22,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Fira Code Nerd Font
+    family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -33,11 +33,10 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fira Code Nerd Font
+    family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    # style: Bold
-    style: Regular
+    style: Bold
 
   # Italic font face
   italic:
@@ -45,7 +44,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fira Code Nerd Font
+    family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -56,13 +55,13 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fira Code Nerd Font
+    family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  size: 14.0
+  size: 18.0
 
 # Colors (Gruvbox dark)
 colors:
