@@ -65,9 +65,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ datetime, 		"DATE: %s",        	"%F %T" },
+	{ datetime, 		"%s",        	"%F %T" },
 	{ separator, 		"%s",				" | "	},
-	{ battery_perc, 	"BAT: %s%%",		"BAT0"  },
+	{ battery_perc, 	"%s%%",		"BAT0"  },
 	{ separator, 		"%s",				" | "	},
-	{ ipv4,   			"IP: %s",			"eno1"  },
+	{ ipv4,   			"%s",			"eno1"  },
 };
