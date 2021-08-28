@@ -47,6 +47,7 @@ Plug 'frazrepo/vim-rainbow'
 
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
+Plug 'pechorin/any-jump.vim'
 
 " End of plugins
 call plug#end()
