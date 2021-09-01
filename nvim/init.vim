@@ -31,6 +31,7 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'andymass/vim-matchup'
+Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'tpope/vim-commentary'
 
@@ -59,7 +60,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
 Plug 'frazrepo/vim-rainbow'
 
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 
 Plug 'f-person/git-blame.nvim'
@@ -135,6 +135,8 @@ let g:rainbow_active = 1
 
 " Quick-save
 nmap <A-w> :w<CR>
+" Quick quit
+nmap <A-q> :q<CR>
 
 " Color scheme
 set background=dark
