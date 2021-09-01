@@ -42,9 +42,16 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tbastos/vim-lua'
 Plug 'preservim/nerdtree'
 
+" Rust
 Plug 'junegunn/fzf'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+
+" Lang
+Plug 'cespare/vim-toml'
+Plug 'stephpy/vim-yaml'
+
+Plug 'dag/vim-fish'
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
