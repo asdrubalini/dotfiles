@@ -34,7 +34,9 @@ Plug 'andymass/vim-matchup'
 
 Plug 'tpope/vim-commentary'
 
+" Themes
 Plug 'morhetz/gruvbox'
+Plug 'RRethy/nvim-base16'
 
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
@@ -129,7 +131,9 @@ let g:rustfmt_autosave = 1
 let g:rainbow_active = 1
 
 " Color scheme
-colorscheme gruvbox
+set background=dark
+let base16colorspace=256
+colorscheme base16-gruvbox-dark-hard
 set background=dark
 set termguicolors
 
