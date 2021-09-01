@@ -126,9 +126,13 @@ nnoremap <silent>    <A-7> :BufferGoto 7<CR>
 nnoremap <silent>    <A-8> :BufferGoto 8<CR>
 nnoremap <silent>    <A-9> :BufferLast<CR>
 
+" Rust
 let g:deoplete#enable_at_startup = 1
 let g:rustfmt_autosave = 1
 let g:rainbow_active = 1
+
+" Quick-save
+nmap <A-w> :w<CR>
 
 " Color scheme
 set background=dark
