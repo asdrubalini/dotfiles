@@ -62,6 +62,8 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 
+Plug 'f-person/git-blame.nvim'
+
 " End of plugins
 call plug#end()
 
