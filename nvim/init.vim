@@ -24,9 +24,14 @@ set nocompatible               " be improved, required
 filetype off                   " required
 
 call plug#begin()
+" Vundle
 Plug 'VundleVim/Vundle.vim'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+
+" GUI enhancements
+Plug 'itchyny/lightline.vim'
+Plug 'machakann/vim-highlightedyank'
+Plug 'andymass/vim-matchup'
+
 Plug 'tpope/vim-commentary'
 
 Plug 'morhetz/gruvbox'
@@ -52,6 +57,23 @@ Plug 'romgrk/barbar.nvim'
 call plug#end()
 
 filetype plugin indent on
+
+" Lightline
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'modified' ] ],
+      \   'right': [ [ 'lineinfo' ],
+      \              [ 'percent' ],
+      \              [ 'fileencoding', 'filetype' ] ],
+      \ },
+      \ 'component_function': {
+      \   'filename': 'LightlineFilename'
+      \ },
+      \ }
+function! LightlineFilename()
+  return expand('%:t') !=# '' ? @% : '[No Name]'
+endfunction
 
 " NERDTree
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -101,7 +123,6 @@ let g:rainbow_active = 1
 
 " Color scheme
 colorscheme gruvbox
-let g:airline_theme='gruvbox'
 set background=dark
 set termguicolors
 
