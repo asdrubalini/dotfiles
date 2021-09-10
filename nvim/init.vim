@@ -8,6 +8,7 @@ set copyindent      " copy indent from the previous line
 set number
 set nu
 set mouse=a
+set relativenumber
 
 " system clipboard
 nmap <c-c> "+y
