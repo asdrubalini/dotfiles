@@ -13,8 +13,11 @@ cp alacritty/* $HOME/.config/alacritty/
 mkdir -p $HOME/.config/picom/
 cp picom/* $HOME/.config/picom/
 
-mkdir -p $HOME/.config/fish/
-cp fish/* $HOME/.config/fish/
+mkdir -p $HOME/.config/i3
+cp i3/* $HOME/.config/i3
+
+mkdir -p $HOME/.config/polybar
+cp polybar/* $HOME/.config/polybar
 
 cp .tmux.conf $HOME/
 
@@ -24,3 +27,4 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 cp -r nvim/* $HOME/.config/nvim/
 
 cp bin/* $HOME/.local/bin
+
