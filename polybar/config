@@ -1,11 +1,11 @@
 [colors]
-background = #222
+background = #282828
 background-alt = #444
-foreground = #dfdfdf
+foreground = #ebdbb2
 foreground-alt = #888
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+primary = #b16286
+secondary = #d3869b
+alert = #fb4934
 
 [bar/main]
 monitor = ${env:MONITOR}
@@ -32,16 +32,13 @@ modules-left = date i3 xwindow
 modules-center =
 modules-right = eth wlan cpu battery
 
-tray-position = right
-tray-padding = 2
-tray-maxsize = 24
-
 [global/wm]
 margin-top = 0
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = %title%
+# label = %title:0:30:...%
 
 [module/cpu]
 type = internal/cpu
@@ -107,15 +104,13 @@ label = %date% %time%
 [module/battery]
 type = internal/battery
 
-; This is useful in case the battery never reports 100% charge
-full-at = 100
-
-; Use the following command to list batteries and adapters:
-; $ ls -1 /sys/class/power_supply/
 battery = BAT0
 adapter = ADP0
 
 poll-interval = 5
+
+format-charging-underline = "#aa00cc"
+format-discharging-underline = "#aa00cc"
 
 [module/i3]
 type = internal/i3
@@ -201,4 +196,3 @@ label-separator-foreground = #ffb52a
 
 [settings]
 screenchange-reload = true
-
