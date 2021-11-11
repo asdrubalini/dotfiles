@@ -11,5 +11,5 @@ picom &
 slstatus &
 dunst &
 
-exec dwm
+exec i3
 

@@ -58,7 +58,6 @@ Plug 'stephpy/vim-yaml'
 
 Plug 'dag/vim-fish'
 
-Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
 Plug 'frazrepo/vim-rainbow'
 

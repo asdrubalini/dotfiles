@@ -31,3 +31,8 @@ export PATH=$HOME/.local/bin/:$PATH
 
 export PS1="\[\033[38;5;9m\][\[$(tput sgr0)\]\[\033[38;5;220m\]\u\[$(tput sgr0)\]\[\033[38;5;154m\]@\[$(tput sgr0)\]\[\033[38;5;81m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;13m\]\W\[$(tput sgr0)\]\[\033[38;5;9m\]]\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
+if [ "$TERM" == "linux" ]
+then
+    unix
+fi
+
