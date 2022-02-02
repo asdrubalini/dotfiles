@@ -5,5 +5,5 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 export EDITOR="nvim"
-export BROWSER="brave"
+export BROWSER="firefox-sec"
 export LANG=en_US.UTF-8

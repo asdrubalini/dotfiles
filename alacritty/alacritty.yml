@@ -7,7 +7,7 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 10
+    x: 5
     y: 5
 
   title: Alacritty
@@ -22,7 +22,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Code New Roman
+    family: Iosevka
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -33,7 +33,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Code New Roman
+    family: Iosevka
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -44,7 +44,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Code New Roman
+    family: Iosevka
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -55,7 +55,8 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Code New Roman
+    family: Iosevka
+
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
@@ -119,7 +120,7 @@ cursor:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    shape: Beam
+    shape: Block
 
     # Cursor blinking state
     #
@@ -136,7 +137,7 @@ cursor:
   # the style of the active value of the normal cursor.
   #
   # See `cursor.style` for available options.
-  vi_mode_style: None
+  vi_mode_style: Beam
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
